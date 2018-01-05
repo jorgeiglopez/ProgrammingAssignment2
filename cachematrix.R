@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
     inv <- x$getInverse()
     if(!is.null(inv)){
-        message("Getting from chache")
+        message("Getting inverse matrix from chache")
         return(inv)
     }
     mat <- x$get()
